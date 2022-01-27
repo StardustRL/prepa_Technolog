@@ -29,4 +29,10 @@ class DateDeNaissance:
             return True
         else : 
             return False
+
+    def __str__(self) -> str:
+        return f"{self.jour}/{self.mois}/{self.annee}"
         
+
+test = DateDeNaissance(13,10,2000)
+print(test)
